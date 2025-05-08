@@ -204,45 +204,6 @@ DELETE /api/deleteBook/:id:
 Delete a book by ID.
 Response: { message: "Book deleted successfully" }
 
-
-
-Project Structure
-book-keeping-application/
-├── backend/
-│   ├── config/
-│   │   └── database.js        # MySQL database configuration
-│   ├── routes/
-│   │   ├── createBook.js      # Route for creating books
-│   │   ├── deleteBook.js      # Route for deleting books
-│   │   ├── getBooks.js        # Route for listing all books
-│   │   ├── getOneBook.js      # Route for fetching book details
-│   │   └── updateBook.js      # Route for updating books
-│   ├── .env                   # Environment variables
-│   ├── server.js              # Express server setup
-│   ├── package.json           # Backend dependencies
-│   └── package-lock.json
-├── src/
-│   ├── components/
-│   │   ├── Home/
-│   │   │   ├── BookModal.js   # Modal for book interactions
-│   │   │   ├── BooksCard.js   # Card view for books
-│   │   │   ├── BookSingleCard.js # Single book card
-│   │   │   └── BooksTable.js  # Table view for books
-│   │   ├── BackButton.js      # Reusable back button component
-│   │   └── Spinner.js         # Loading spinner component
-│   ├── pages/
-│   │   ├── CreateBook.js      # Page for creating books
-│   │   ├── DeleteBook.js      # Page for deleting books
-│   │   ├── EditBook.js        # Page for editing book details
-│   │   ├── Home.js            # Page for listing books
-│   │   └── ShowBook.js        # Page for viewing book details
-│   ├── App.js                 # Main app component with routes
-│   ├── index.js               # React entry point
-│   └── index.css              # Global styles
-├── package.json               # Frontend dependencies
-├── package-lock.json
-└── README.md                  # Project documentation
-
 Contributing
 
 Fork the repository.
